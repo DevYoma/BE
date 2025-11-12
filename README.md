@@ -1,52 +1,12 @@
-Project URL: https://roadmap.sh/projects/task-tracker
-## How To Use Task-Tracker
+Project URL: https://roadmap.sh/projects/github-user-activity
+## How To Use Github-User-Activity CLI
 
-### Add New Task
+Follow the steps
+- Type in the following command 
 
 ```bash
-task-cli add "task 1"
+github-activity {githubUsername}
 ```
 
-### Update Task
-```bash
-task-cli update 1 "task 1 updated"
-```
-
-### Delete Task
-```bash
-task-cli delete 1
-``` 
-This deletes task 1
-
-### Updating Task Status
-**NB: By default, every task added has the "todo" status**
-```bash
-task-cli mark-in-progress 1
-```
-This changes the status of task 1 to **mark-in-progress**
-
-```bash
-task-cli mark-done 1
-```
-This changes the status of task 1 to **done**
-
-### List All Tasks
-```bash
-task-cli list
-```
-
-#### List Tasks Status
-```bash
-task-cli list todo 
-```
-lists all the added tasks. This is the default when a task is added
-
-```bash
-task-cli list in-progress 
-```
-lists all tasks that have status: in-progress
-
-```bash
-task-cli list todo
-```
-lists all tasks that have status: todo
+- If the name is valid, you'll get some of the accounts activity
+- else, you'll be met with some sweet errors handled gracefully. 
