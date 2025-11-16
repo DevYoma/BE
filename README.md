@@ -1,27 +1,9 @@
-Project URL: https://roadmap.sh/projects/expense-tracker
-## How To Use Expense Tracker CLI
+Project URL: https://roadmap.sh/projects/number-guessing-game
+## How To Use Number Guessing Game
 
-### Adding an Expense
+Start the game using the command below 
 ```bash
-expense-cli add --description {expense} --amount {100}
+start-game
 ```
 
-### List Expenses
-```bash
-expense-cli list
-```
-
-### Expense Summary
-```bash
-expense-cli summary
-```
-
-#### Expense Summary By Month
-```bash
-expense-cli summary --month 8 
-```
-
-### Delete Expense
-```bash
-expense-cli delete --id 2
-```
+Follow the instructions till you get to the end of the game
