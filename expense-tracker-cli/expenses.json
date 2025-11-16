@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "description": "Data",
+    "amount": 9000,
+    "date": "2025-11-15T23:35:40.749Z"
+  },
+  {
+    "id": 4,
+    "description": "bike",
+    "amount": 5000,
+    "date": "2025-11-16T00:23:31.017Z"
+  }
+]
