@@ -1,4 +1,4 @@
-<!-- Project URL: https://roadmap.sh/projects/github-user-activity -->
+Project URL: https://roadmap.sh/projects/expense-tracker
 ## How To Use Expense Tracker CLI
 
 ### Adding an Expense
