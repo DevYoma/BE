@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weight Converter</title>
+</head>
+<body>
+  <h1>Weight Converter</h1>
+
+  <form method="POST" action="/weight" target="_self">
+    <label>Value:</label><br>
+    <input type="number" step="any" name="numValue" required><br><br>
+
+    <label>Convert From:</label><br>
+    <select name="fromUnit" required>
+      <option value="g">Gram (g)</option>
+      <option value="kg">Kilogram (kg)</option>
+      <option value="mg">Milligram (mg)</option>
+    </select><br><br>
+
+    <label>Convert To:</label><br>
+    <select name="toUnit" required>
+      <option value="g">Gram (g)</option>
+      <option value="kg">Kilogram (kg)</option>
+      <option value="mg">Milligram (mg)</option>
+    </select><br><br>
+
+    <button type="submit">Convert</button>
+  </form>
+
+  <h2>
+  Converted Value:
+  <% if (typeof convertedValue !== "undefined") { %>
+    <%= convertedValue %>
+  <% } %>
+</h2>
+
+</body>
+</html>

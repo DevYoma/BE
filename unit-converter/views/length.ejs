@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Length Converter</title>
+</head>
+<body>
+  <h1>Length Converter</h1>
+
+  <form method="POST" action="/length" target="_self">
+    <label>Value:</label><br>
+    <input type="number" step="any" name="numValue" required><br><br>
+
+    <label>Convert From:</label><br>
+    <select name="fromUnit" required>
+      <option value="cm">Centimeter (cm)</option>
+      <option value="m">Meter (m)</option>
+      <option value="km">Kilometer (km)</option>
+    </select><br><br>
+
+    <label>Convert To:</label><br>
+    <select name="toUnit" required>
+      <option value="cm">Centimeter (cm)</option>
+      <option value="m">Meter (m)</option>
+      <option value="km">Kilometer (km)</option>
+    </select><br><br>
+
+    <button type="submit">Convert</button>
+  </form>
+
+  <!-- If backend outputs a result, display it here -->
+  <h2>
+  Converted Value: 
+  <% if (typeof convertedValue !== "undefined") { %>
+    <%= convertedValue %>
+  <% } %>
+</h2>
+
+
+</body>
+</html>
